@@ -12,7 +12,7 @@ async function toggleState() {
         } else {
             console.error('Toggle state request failed');
         }
-        //fetchState(); // Refresh state after toggling
+        fetchState(); // Refresh state after toggling
     } catch (error) {
         console.error('Error in toggleState:', error);
     }
@@ -30,5 +30,5 @@ async function fetchState() {
     }
 }
 
-//fetchState(); // Load initial state
+fetchState(); // Load initial state
 </script>
