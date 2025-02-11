@@ -12,7 +12,7 @@ async function toggleState() {
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify({}) // ✅ Correct placement inside the same object
+            body: JSON.stringify({message: "change"}) // indicate a change in the toggle
         });
 
         if (response.ok) {
